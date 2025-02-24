@@ -18,15 +18,15 @@ O protótipo foi desenvolvido no Figma. Você pode visualizá-lo [aqui](https://
 
 ### Telas Principais
 - **Dashboard**: Visão geral do sistema.
-  ![Dashboard](design/1homepage.png)
+  ![Dashboard](../design/1homepage.png)
 - **Setores**: Cadastro e pesquisa de setores.
-  ![Dashboard](design/2setores.png)
+  ![Setores](../design/2setores.png)
 - **Cargos**: Cadastro de cargos.
-  ![Dashboard](design/3cargos.png)
+  ![Cargos](../design/3cargos.png)
 - **Cargos/pesquisa**: Pesquisa de cargos.
-  ![Dashboard](design/4cargos_pesquisar.png)
+  ![Pesquisar cargos](../design/4cargos_pesquisar.png)
 - **Cargos/pesquisa/lista de cargos**: Lista todos os cargos.
-  ![Dashboard](design/5cargos_pesquisar_lista.png)
+  ![Lista de cargos](../design/5cargos_pesquisar_lista.png)
 - **Cargos/pesquisa/lista de cargos/editar**: Edita o cargo.
-  ![Dashboard](design/6cargos_pesquisar_editar.png)
+  ![Editar cargo](../design/6cargos_pesquisar_editar.png)
   
