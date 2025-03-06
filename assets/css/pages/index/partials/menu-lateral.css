@@ -1,0 +1,121 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px
+}
+
+
+/* Menu Lateral */
+.menu-lateral {
+    width: 250px;
+    height: 100vh;
+    background: var(--cor-azulescuro);
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    color: var(--cor-cinzamenu);
+    font-size: var(--f2);
+}
+
+.menu-lateral h2 {
+    text-align: left;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: var(--f3);
+}
+
+.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.dropdown-log {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.dropdown-log  {
+    color: var(--cor-cinzamenu);
+    text-decoration: none;
+    font-size: var(--f2);
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.dropdown-log a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;    
+}
+
+.menu-lateral ul li {
+    padding-bottom: 15px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.menu-lateral ul li a {
+    color: var(--cor-cinzamenu);
+    text-decoration: none;
+    font-size: var(--f2);
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+}
+
+.menu-lateral ul li a svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.menu-lateral ul > li:hover {
+    background: var(--cor-hovermenu);
+    border-radius: 5px;
+}
+
+.menu-lateral ul li > a:hover {
+    color: var(--cor-branco);
+}
+
+.menu-lateral ul li > a:hover svg {
+    fill: var(--cor-branco);
+}
+
+
+/* Submenu */
+.submenu {
+    display: none;
+    padding-left: 20px;
+    margin-left: 35px;
+}
+
+.menu-lateral ul li ul.submenu li {
+    padding-bottom: 5px; /* Espaçamento entre os submenus */
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.submenu ul li {
+    padding: 10px;
+}
+
+.submenu li a {
+   font-size: var(--f1);
+}
+
+/* Ativação do submenu */
+.submenu.active {
+    display: block;
+}
+
+/* Setas para os submenus */
+.arrow {
+    margin-left: auto;
+    font-size: 12px;
+}
+

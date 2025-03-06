@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: var(--cor-branco);
+    height: 100px;
+    width: 100%;
+}
+
+.nome-empresa {
+    font-size: var(--f3);
+    font-weight: bolder;
+    color: var(--cor-cinzatit);
+    margin: 0;
+    margin-left: 250px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.user {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    color: var(--cor-azulmedio);
+}
+
+.profile-options {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: var(--cor-branco);
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+.profile-options a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--cor-cinzatit)
+}
+
+.profile-options a:hover {
+    background-color: #f5f5f5;
+}
+
+.user-profile:hover .profile-options {
+    display: block;
+}

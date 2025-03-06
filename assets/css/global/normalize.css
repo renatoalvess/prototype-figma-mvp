@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    display: flex;
+    background-color: var(--cor-cinza1);
+    overflow-y: scroll; /* Adiciona rolagem automaticamente se necessário */
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Botão cadastrar */
+
+.btn-cadastrar {
+    padding: 10px;
+    background-color: var(--cor-turquesa);
+    font-size: var(--f2);
+    color: var(--cor-branco);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 30px;
+    font-weight: 500;
+    padding: 10px 30px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 30px;
+}
+
+.btn-cadastrar:hover {
+    background-color: var(--cor-turquesa-hover);
+}
+
+/* Botão cancelar */
+
+.btn-cancelar {
+    padding: 10px;
+    background-color: var(--cor-vermelho);
+    font-size: var(--f2);
+    color: var(--cor-branco);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 30px;
+    font-weight: 500;
+    padding: 10px 30px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 30px;
+}
+
+.btn-cancelar:hover {
+    background-color: var(--cor-vermelho-hover);
+}
+
+/* Botão limpar */
+
+.btn-limpar {
+    padding: 10px;
+    background-color: var(--cor-cinza-limpar);
+    font-size: var(--f2);
+    color: var(--cor-preto);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 30px;
+    font-weight: 500;
+    padding: 10px 30px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 30px;
+}
+
+.btn-limpar:hover {
+    background-color: var(--cor-cinza-limpar--hover);
+}
