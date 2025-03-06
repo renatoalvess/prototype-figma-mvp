@@ -1,0 +1,34 @@
+:root {
+    --cor-turquesa: #47C0C3; /*Botão cadastrar */
+    --cor-turquesa-hover: hsl(181, 51%, 42%); /*Botão cadastrar hover*/
+    --cor-azulmedio: #3389E1; /*Botão atualizar */
+    --cor-azulmedio: hsl(210, 74%, 44%); /*Botão atualizar hover */
+    --cor-amarelo: #F1C75F; /*Botão alerta */
+    --cor-amarelo: hsl(43, 84%, 56%); /*Botão alerta hover*/
+    --cor-azulclaro: #00AFDE; /*Botão informações */
+    --cor-azulclaro: hsl(193, 100%, 34%); /*Botão informações hover */
+    --cor-cinza-limpar: #F2F2F7; /*Botão limpar */
+    --cor-cinza-limpar-hover: hsl(240, 24%, 86%); /*Botão limpar hover */
+    --cor-azulescuro: #172941; /*Fundo menu lateral */
+    --cor-cinza1: #E9F1F3; /*Fundo */
+    --cor-vermelho: #DB4542; /*Botão cancelar */
+    --cor-vermelho-hover: hsl(1, 68%, 46%); /*Botão cancelar hover */
+    --cor-branco: #FFFFFF; /*Cards */
+    --cor-hovermenu: #2A3B50; /*Hover */
+    
+    --cor-cinzamenu: #AAB2BE; /*Font menu painel */
+    --cor-cinzaforms: #585F74; /*Font Caixa dos forms */
+    --cor-cinzatit: #262932; /*Font Títulos das funcnionalidades */
+    --cor-cinzaplace: #A7A7A7; /*Font Placeholder */
+    --cor-preto: #000000; /*Fontes se necessário */
+
+
+    /*Tamanho das fontes*/
+    --f0: 9px;
+    --f01: 10px;
+    --f1: 12px;
+    --f2: 14px;
+    --f3: 16px;
+    --f4: 18px;
+    --f5: 30px;
+}
