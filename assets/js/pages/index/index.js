@@ -17,3 +17,13 @@ document.querySelectorAll('.dropdown > a').forEach(menu => {
         }
     });
 });
+
+
+//Botão menu
+
+// Função para alternar o estado do menu
+function toggleMenu() {
+    const menu = document.querySelector('.menu-lateral');
+    menu.classList.toggle('collapsed');
+}
+
