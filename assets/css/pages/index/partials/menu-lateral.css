@@ -37,7 +37,7 @@
     cursor: pointer;
 }
 
-.dropdown-log  {
+.dropdown-log {
     color: var(--cor-cinzamenu);
     text-decoration: none;
     font-size: var(--f2);
@@ -49,7 +49,7 @@
 .dropdown-log a img {
     width: 24px;
     height: 24px;
-    margin-right: 10px;    
+    margin-right: 10px;
 }
 
 .menu-lateral ul li {
@@ -73,16 +73,16 @@
     margin-right: 10px;
 }
 
-.menu-lateral ul > li:hover {
+.menu-lateral ul>li:hover {
     background: var(--cor-hovermenu);
     border-radius: 5px;
 }
 
-.menu-lateral ul li > a:hover {
+.menu-lateral ul li>a:hover {
     color: var(--cor-branco);
 }
 
-.menu-lateral ul li > a:hover svg {
+.menu-lateral ul li>a:hover svg {
     fill: var(--cor-branco);
 }
 
@@ -95,7 +95,8 @@
 }
 
 .menu-lateral ul li ul.submenu li {
-    padding-bottom: 5px; /* Espaçamento entre os submenus */
+    padding-bottom: 5px;
+    /* Espaçamento entre os submenus */
     padding: 5px;
     margin-top: 5px;
 }
@@ -105,7 +106,7 @@
 }
 
 .submenu li a {
-   font-size: var(--f1);
+    font-size: var(--f1);
 }
 
 /* Ativação do submenu */
@@ -119,3 +120,65 @@
     font-size: 12px;
 }
 
+@media (max-width: 768px) {
+    .menu-lateral {
+        width: 60px;
+        transition: width 0.3s;
+    }
+    
+    .menu-lateral ul li a span {
+        display: none;
+    }
+    
+    /* Oculta o dropdown por padrão */
+    .dropdown ul li {
+        display: none;
+    }
+    
+    /* Exibe o dropdown somente quando o menu lateral está expandido */
+    .menu-lateral.collapsed .dropdown ul li {
+        display: block;
+    }
+    
+    .menu-lateral.collapsed {
+        width: 250px;
+    }
+    
+    .menu-lateral.collapsed ul li a span {
+        display: inline;
+    }
+    
+   
+    
+
+
+    /* Botão expandir */
+    #toggleMenu {
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #toggleMenu svg {
+        width: 18px;
+        height: 18px;
+        fill: var(--cor-cinzamenu);
+        margin-left: 15px;
+    }
+
+    #toggleMenu svg:hover {
+        fill: var(--cor-branco);
+    }
+
+    .menu-lateral .logo {
+        display: none;
+    }
+
+    .menu-lateral h2 {
+        display: none;
+    }
+}
