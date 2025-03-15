@@ -1,20 +1,23 @@
 .container-forms {
-    margin-top: 5px;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .forms {
-    width: calc(1110px - 250px);
+    width: calc(1110px - 330px);
     padding: 20px;
     background: #fff;
     border-radius: 8px;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-titulo {
     margin-bottom: 50px;
     font-size: var(--f01);
     margin-top: 10px;
-    color: var( --cor-cinzatit);
+    color: var(--cor-cinzatit);
     font-weight: 700;
 }
 
@@ -30,7 +33,7 @@ form input {
     margin-bottom: 15px;
     padding: 10px;
     display: flex;
-    width: calc(1110px - 300px);
+    width: calc(1110px - 350px);
     border: 1px solid #ddd;
     border-radius: 4px;
     margin-top: 15px;
@@ -50,5 +53,25 @@ input::placeholder {
     height: 30px;
     display: flex;
     margin-left: auto;
-    fill:var(--cor-azulmedio);
+    fill: var(--cor-azulmedio);
+}
+
+@media (max-width: 768px) {
+
+    .forms {
+        width: calc(100% - 40px);
+    }
+
+
+    .container-forms {
+        width: calc(100% - 60px);
+        margin-left: auto;
+    }
+
+
+    form input {
+        margin-right: auto;
+        width: calc(100% - 30px);
+    }
+    
 }
