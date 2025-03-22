@@ -1,12 +1,8 @@
 /* Container do Dashboard */
 .dashboard-container {
-    margin-left: auto;
-    /* Largura do menu lateral */
-    margin-top: 20px;
-    /* Altura do header */
-    width: calc(1110px - 290px);
-    /* Largura total menos o menu lateral */
+    flex-grow: 1;
     background-color: var(--cor-cinza1);
+    padding: 20px;
 }
 
 /* Dashboard */
@@ -22,6 +18,7 @@
 }
 
 .card {
+
     background: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -174,7 +171,6 @@
     color: var(--cor-azulmedio);
 }
 
-
 /* Card 5 - A empresa */
 
 .cards-5 {
@@ -249,11 +245,9 @@
     fill: var(--cor-azulmedio);
 }
 
-
 /* Media Queries */
 @media (max-width: 1200px) {
     .dashboard-container {
-        margin-left: 20px;
         width: calc(100% - 40px);
     }
 
@@ -262,14 +256,12 @@
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         gap: 20px;
     }
-    
 
     .cards,
     .cards-2,
     .cards-3,
     .cards-4,
     .cards-5 {
-        margin-left: 60px;
         margin-right: auto;
 
     }
@@ -281,7 +273,7 @@
 
 
     .cards-5 {
-        width: calc(100% - 60px);
+        width: 100%;
     }
 
     .cards-5 p {

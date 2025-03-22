@@ -5,7 +5,7 @@
 }
 
 .forms {
-    width: calc(1110px - 330px);
+    width: 100%;
     padding: 20px;
     background: #fff;
     border-radius: 8px;
@@ -21,7 +21,6 @@
     font-weight: 700;
 }
 
-
 form label {
     margin-bottom: 5px;
     color: var(--cor-cinzaforms);
@@ -31,12 +30,14 @@ form label {
 
 form input {
     margin-bottom: 15px;
-    padding: 10px;
     display: flex;
-    width: calc(1110px - 350px);
+    height: 30px;
+    width: 100%;
     border: 1px solid #ddd;
     border-radius: 4px;
     margin-top: 15px;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 input::placeholder {
@@ -58,20 +59,7 @@ input::placeholder {
 
 @media (max-width: 768px) {
 
-    .forms {
-        width: calc(100% - 40px);
-    }
-
-
     .container-forms {
-        width: calc(100% - 60px);
         margin-left: auto;
     }
-
-
-    form input {
-        margin-right: auto;
-        width: calc(100% - 30px);
-    }
-    
 }
