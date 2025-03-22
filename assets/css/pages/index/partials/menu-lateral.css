@@ -5,21 +5,18 @@
     margin-top: 20px
 }
 
-
 /* Menu Lateral */
 .menu-lateral {
     width: 250px;
-    height: 100vh;
     background: var(--cor-azulescuro);
     padding-top: 20px;
-    position: fixed;
     top: 0;
     color: var(--cor-cinzamenu);
     font-size: var(--f2);
+    min-height: 100vh;
 }
 
 .menu-lateral h2 {
-    text-align: left;
     margin-bottom: 30px;
     margin-top: 50px;
     margin-left: 20px;
@@ -49,7 +46,6 @@
 .dropdown-log a img {
     width: 24px;
     height: 24px;
-    margin-right: 10px;
 }
 
 .menu-lateral ul li {
@@ -65,12 +61,16 @@
     display: flex;
     align-items: center;
     font-weight: 100;
+
 }
 
 .menu-lateral ul li a svg {
     width: 18px;
     height: 18px;
-    margin-right: 10px;
+}
+
+span {
+    margin-left: 10px;
 }
 
 .menu-lateral ul>li:hover {
@@ -86,11 +86,9 @@
     fill: var(--cor-branco);
 }
 
-
 /* Submenu */
 .submenu {
     display: none;
-    padding-left: 20px;
     margin-left: 35px;
 }
 
@@ -125,31 +123,29 @@
         width: 60px;
         transition: width 0.3s;
     }
-    
+
     .menu-lateral ul li a span {
         display: none;
     }
-    
+
     /* Oculta o dropdown por padrão */
     .dropdown ul li {
         display: none;
     }
-    
+
     /* Exibe o dropdown somente quando o menu lateral está expandido */
     .menu-lateral.collapsed .dropdown ul li {
         display: block;
     }
-    
+
     .menu-lateral.collapsed {
         width: 250px;
+        position: fixed;
     }
-    
+
     .menu-lateral.collapsed ul li a span {
         display: inline;
     }
-    
-   
-    
 
 
     /* Botão expandir */
