@@ -1,0 +1,101 @@
+.login-container-2 {
+    flex-grow: 1;
+    background-color: var(--cor-cinza1);
+    padding: 20px;
+    background-color: var(--cor-branco);
+}
+
+.container-login {
+    width: 1110px;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-branco);
+}
+.text_login {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text_login h2 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container-text{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.forms-login {
+    padding: 20px;
+    background: var(--cor-branco);
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+form label {
+    margin-bottom: 5px;
+    color: var(--cor-cinzaforms);
+    font-size: var(--f2);
+    font-weight: 600;
+}
+
+.imput_login {
+    margin-bottom: 15px;
+    display: flex;
+    height: 30px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 15px;
+    padding: 25px;
+    box-sizing: border-box;
+    font-size: var(--f3);
+}
+
+.imput_login::placeholder {
+    color: var(--cor-cinzaplace);
+    font-size: var(--f3);
+
+}
+
+.container-titulo {
+    justify-content: space-between;
+    display: flex;
+}
+
+.h2-login {
+    font-size: var(--f5);
+    margin-bottom: 30px;;
+    color: var(--cor-azulescuro);
+}
+
+.par-login a {
+    color: var(--cor-preto);
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.par-login {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+
+    .container-forms-login {
+        margin-left: auto;
+    }
+}
+
