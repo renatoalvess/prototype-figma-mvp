@@ -1,0 +1,60 @@
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+/* Menu Lateral */
+.barra-lateral {
+    display: flex;
+    width: 555px;
+    background: var(--cor-azulescuro);
+    padding-top: 20px;
+    top: 0;
+    color: var(--cor-cinza1);
+    font-size: var(--f4);
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra-lateral h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    font-size: var(--f4);
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+
+.container-text .link-chamada {
+    margin-top: 90px;
+}
+
+.link-chamada a {
+    text-decoration: none;
+    color: var(--cor-cinza1);
+    font-size: var(--f3);
+    margin-top: 30px;
+    font-weight: 100;
+}
+
+.link-chamada a:hover{
+    color: var(--cor-azulmedio);
+}
+
+
+@media (max-width: 768px) {
+    .barra-lateral {
+        display: none;
+    }
+
+
+    .barra-lateral h2 {
+        display: none;
+    }
+}
+

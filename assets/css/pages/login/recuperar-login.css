@@ -1,0 +1,16 @@
+.par-recuperar {
+    color: var(--cor-preto);
+    text-decoration: none;
+    text-align: end;
+    justify-content: center;
+    align-items: center;
+}
+
+.par-recuperar a {
+    font-size: var(--f2);
+    color: var(--cor-preto);
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}

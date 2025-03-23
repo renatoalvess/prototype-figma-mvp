@@ -41,6 +41,31 @@ body {
     background-color: var(--cor-turquesa-hover);
 }
 
+/* Botão login */
+.btn-login {
+    display: flex;
+    padding: 15px 20px;
+    background-color: var(--cor-branco);
+    font-size: var(--f4);
+    color: var(--cor-cinzaforms);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 30px;
+    font-weight: 700;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    width: auto;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    margin-bottom: 20px;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.btn-login:hover {
+    background-color: var(--cor-turquesa-hover);
+    color: var(--cor-branco);
+}
+
 /* Botão cancelar */
 
 .btn-cancelar {
