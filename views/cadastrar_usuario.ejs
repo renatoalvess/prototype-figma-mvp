@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Recursos Humanos</title>
+    <link rel="stylesheet" href="/css/pages/index/index.css">
+    <script src="/js/pages/cadastrar_usuario/cadastrar_usuario.js" defer></script>
+</head>
+
+<body>
+    <div class="container-login">
+        <div class="barra-lateral">
+            <div class="container-text">
+                <div class="logo"><img src="css/images/logo/Vector.png" alt="Logo"></div>
+                <div class="text_login">
+                    <h1>Seja Bem Vindo!</h1>
+                    <h2>Sistema de Recursos Humanos</h2>
+                    <h2 class="link-chamada"><a href="">Conheça nossos planos!</a></h2>
+                </div>
+            </div>
+        </div>
+        <!-- tudo acima é config da pag e barra lateral-->
+
+        <div class="login-container-2">
+            <div class="container-forms-login">
+                <div class="forms-login">
+                    <div class="container-titulo">
+                        <div class="titulo-form">
+                            <h2 class="h2-login">
+                                Novo por Aqui? <!-- titulo no topo da pag-->
+                            </h2>
+                            <h2>Cadastre-se</h2> <!-- titulo no topo da pag-->
+                        </div>
+
+                    </div> <!--formulario abaixo, passivel de modificações -->
+                    <form id="formulario-cadastro-usuario">
+
+                        <input class="imput_login" type="text" id="nomeSetor" name="nomeSetor"
+                            placeholder="Nome Completo" required>
+
+                        <input class="imput_login" type="text" id="email" name="nomeSetor" placeholder="E-mail"
+                            required>
+
+                        <div class="campo-senha">
+                            <input class="imput_login" type="password" id="senha" name="senha" placeholder="Senha"
+                                required>
+                            <button type="button" class="toggle-visibility"
+                                onclick="toggleVisibilityWithText('senha', this)">Ver</button>
+                            <div id="erroSenha" class="mensagem-erro"></div>
+                        </div>
+
+                        <div class="campo-senha">
+                            <input class="imput_login" type="password" id="confirmarSenha" name="confirmarSenha"
+                                placeholder="Repita sua Senha" required>
+                            <button type="button" class="toggle-visibility"
+                                onclick="toggleVisibilityWithText('confirmarSenha', this)">Ver</button>
+                            <div id="erroConfirmarSenha" class="mensagem-erro"></div>
+                        </div>
+
+
+                        <button class="cadastrar" type="submit" onclick="validar(event)">Cadastrar</button>
+                        <div class="par-recuperar">
+                            <p><a href="/"> <strong>Voltar para login</strong></a></p>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
