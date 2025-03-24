@@ -1,0 +1,86 @@
+/*adicionado por harisson*/
+
+.cadastrar {
+    padding: 10px;
+    background-color: var(--cor-branco);
+    font-size: var(--f4);
+    color: var(--cor-cinzaforms);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 30px;
+    font-weight: 700;
+    padding: 15px 20px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    /* Borda cinza fraca */
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.cadastrar:hover {
+    background-color: var(--cor-turquesa-hover);
+    color: var(--cor-branco);
+}
+
+/* Estilo para campos inválidos */
+.campo-invalido {
+    border: 2px solid #e74c3c;
+    /* Vermelho para destacar o erro */
+    box-shadow: 0 0 5px #e74c3c;
+    /* Sombra vermelha */
+}
+
+.campo-senha {
+    position: relative;
+    margin-bottom: 15px;
+    /* Adiciona espaço entre os campos */
+}
+
+.campo-senha input {
+    width: 100%;
+    /* Faz o input ocupar toda a largura */
+    padding-right: 40px;
+    /* Espaço para o botão "Ver" */
+}
+
+.campo-senha button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Mensagens de erro */
+.mensagem-erro {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 5px;
+    /* Espaço entre o input e a mensagem de erro */
+}
+
+/* ver e ocultar senha */
+.toggle-visibility {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #a2acb6;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-decoration: underline;
+}
+
+.toggle-visibility:hover {
+    color: #77838f;
+    /* Realcar no hover com essa cor */
+    font-weight: bold;
+}
+
+/* harisson até aqui */

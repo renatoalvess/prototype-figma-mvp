@@ -11,7 +11,12 @@ O sistema de RH é composto por:
 - **Gerenciamento de Funcionários**: Cadastro, edição e exclusão de funcionários.
 - **Folha de Pagamento**: Gerenciamento de pagamentos.
 - **Benefícios**: Gerenciamento de benefícios.
+- **tela de cadastro de usuario**: realização de cadastro de novos usuarios.
+- **tela de login**: login do usuario.
+- **tela de esqueci sua senha**: destinada a recuperação de acesso ao sistema.
 
+## tecnologias utilizadas
+o MVP é composto de HTLM e CSS para estruturação e estilização do sistema, JavaScript para interação do usuario, fetch API para simular comunicação com back-end, com formato de dados em JSON. 
 
 ## Protótipo de Alta Fidelidade
 O protótipo foi desenvolvido no Figma. Você pode visualizá-lo [aqui](https://www.figma.com/design/J624QdsPAa08a9QNeclkdP/Prot%C3%B3tipo-Preliminar-de-Alta-Fidelidade---RH?node-id=0-1&t=NG6QlhGzwUmRtFVg-1).
@@ -30,3 +35,4 @@ O protótipo foi desenvolvido no Figma. Você pode visualizá-lo [aqui](https://
 - **Cargos/pesquisa/lista de cargos/editar**: Edita o cargo.
   ![Editar cargo](design/6cargos_pesquisar_editar.png)
   
+
