@@ -1,4 +1,4 @@
-# Protótipo de Alta Fidelidade - Sistema de Recursos Humanos
+# Protótipo de Alta Fidelidade - Sistema de Recursos Humanos - Projeto Integrado III UFCA
 
 ## Este repositório tem como objetivo gerenciar setores, cargos, funcionários e a folha de pagamento de uma empresa de recursos humanos de pequeno porte.
 
@@ -18,6 +18,8 @@ O sistema de RH é composto por:
 ## tecnologias utilizadas
 o MVP é composto de HTLM e CSS para estruturação e estilização do sistema, JavaScript para interação do usuario, fetch API para simular comunicação com back-end, com formato de dados em JSON. 
 
+Express e EJS para criar páginas dinâmicas com um front-end modularizado. Para reutilizar componentes e configurar um servidor.
+
 ## Protótipo de Alta Fidelidade
 O protótipo foi desenvolvido no Figma. Você pode visualizá-lo [aqui](https://www.figma.com/design/J624QdsPAa08a9QNeclkdP/Prot%C3%B3tipo-Preliminar-de-Alta-Fidelidade---RH?node-id=0-1&t=NG6QlhGzwUmRtFVg-1).
 
@@ -35,4 +37,44 @@ O protótipo foi desenvolvido no Figma. Você pode visualizá-lo [aqui](https://
 - **Cargos/pesquisa/lista de cargos/editar**: Edita o cargo.
   ![Editar cargo](design/6cargos_pesquisar_editar.png)
   
+## Pré-requisitos
+Antes de começar, certifique-se de ter as seguintes ferramentas instaladas:
+- [Node.js](https://nodejs.org/)
+- [NPM](https://www.npmjs.com/) (gerenciado pelo Node.js)
 
+## Como Instalar e Rodar o Projeto
+1. Clone este repositório:
+   ```bash
+   https://github.com/renatoalvess/prototype-figma-mvp.git
+
+2. Acesse o diretório do projeto:
+   ```bash
+   cd prototype-figma-mvp
+
+3. Instale as dependências:
+   ```bash
+   npm install
+
+4. Inicie o servidor:
+   ```bash
+   node app.js
+
+5. Acesse no navegador:
+   ```bash
+   http://localhost:3000
+
+## Como Contribuir como colaborador
+1. Faça um fork do projeto.
+2. Crie uma branch para sua feature:
+   ```bash
+   git checkout -b minha-feature
+
+3. Faça as alterações desejadas e commit:
+   ```bash
+   git commit -m "Adiciona nova feature"
+
+4. Faça as alterações desejadas e commit:
+   ```bash
+   git push origin minha-feature
+
+5. Abra um Pull Request.
