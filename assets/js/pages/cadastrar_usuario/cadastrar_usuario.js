@@ -131,7 +131,7 @@ async function enviarCadastro(event) {
 /// Adicionando o evento submit ao formulário
 formulario.addEventListener("submit", enviarCadastro);
 
-// Validar dinamicamente enquanto o usuario digita (botei por recomendação, mas não entendi)
+// Validar dinamicamente enquanto o usuario digita (botei por recomendação, mas não entendi) (entendi depois kkkkk)
 const campos = formulario.querySelectorAll("input");
 campos.forEach((campo) => {
     campo.addEventListener("input", () => {
