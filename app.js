@@ -23,16 +23,26 @@ app.get('/dashboard', (req, res) => {
 });
 // Rota cadastrar usuário
 app.get('/cadastrar_usuario', (req, res) => {
-  res.render('cadastrar_usuario'); // Renderiza o arquivo `views/recuperar_login.ejs`
+  res.render('cadastrar_usuario'); // Renderiza o arquivo `views/cadastrar_usuario.ejs`
 });
 
-// Outra rota (exemplo: página Cadastrar Setor)
+// Rota página Cadastrar Setor
 app.get('/cadastrar-setor', (req, res) => {
   res.render('cadastrar_setor'); // Renderiza o arquivo `views/cadastrar_setor.ejs`
 });
-// Outra rota (exemplo: página CadastrarUsuário)
-app.get('/cadastrar-usuario', (req, res) => {
-  res.render('cadastrar_usuario'); // Renderiza o arquivo `views/cadastrar_usuário.ejs`
+// Rota página Pesquisar Setor
+app.get('/pesquisar-setor', (req, res) => {
+  res.render('pesquisar_setor'); // Renderiza o arquivo `views/pesquisar_setor.ejs`
+});
+
+// Rota página Cadastrar Cargo
+app.get('/cadastrar-cargo', (req, res) => {
+  res.render('cadastrar_cargo'); // Renderiza o arquivo `views/cadastrar_cargo.ejs`
+});
+
+// Rota página Pesquisar Cargo
+app.get('/pesquisar-cargo', (req, res) => {
+  res.render('pesquisar_cargo'); // Renderiza o arquivo `views/cadastrar_cargo.ejs`
 });
 
 // Iniciar o servidor

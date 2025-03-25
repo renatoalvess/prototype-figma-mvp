@@ -73,7 +73,7 @@ Antes de começar, certifique-se de ter as seguintes ferramentas instaladas:
    ```bash
    git commit -m "Adiciona nova feature"
 
-4. Faça as alterações desejadas e commit:
+4. Envie suas alterações para o repositório remoto:
    ```bash
    git push origin minha-feature
 
