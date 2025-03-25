@@ -30,6 +30,6 @@ function validar(event) {
         return false;
     }
 
-    alert('Formulário enviado com sucesso!');
+    alert('Setor cadastrado com sucesso!');
     document.getElementById('formulario-setor').reset();
 }
