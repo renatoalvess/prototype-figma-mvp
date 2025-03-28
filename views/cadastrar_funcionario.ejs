@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Recursos Humanos</title>
     <link rel="stylesheet" href="/css/pages/index/index.css">
-    <script src="/css/js/pages/index/index.js" defer></script>
-    <script src="/js/pages/index/index.js" defer></script>
+    <script src="/js/pages/index/index.js" defer></script> <!-- Menu lateral -->
     <script src="/js/pages/cadastrar_funcionario/cadastrar_funcionario.js" defer></script>
 </head>
 
@@ -49,15 +48,35 @@
                                 <label for="cpfFuncionario">CPF:</label>
                                 <input type="text" id="cpfFuncionario" name="cpfFuncionario" placeholder="CPF do Funcionario" required>
 
+                                <label for="nascFuncionario">Data de Nascimento:</label>
+                                <input type="date" id="nascFuncionario" name="nascFuncionario" placeholder="Data de Nascimento" required>
+
+                                <label for="sexo">Sexo:</label>
+                                <input type="text" id="sexo" name="sexo" placeholder="Masculino ou Feminino" required>
+
                                 <label for="endereco">Endereço:</label>
                                 <input type="text" id="endereco" name="endereco" placeholder="Endereço" required>
 
-                                <label for="responsavel">Responsável:</label>
-                                <input type="text" id="responsavel" name="responsavel" placeholder="Responsável"
-                                    required>
+                                <label for="municipio">Município:</label>
+                                <input type="text" id="municipio" name="municipio" placeholder="Município" required>
 
                                 <label for="email">E-mail:</label>
-                                <input type="email" id="email" name="email" placeholder="E-mail" required>
+                                <input type="email" id="email" name="email" placeholder="nome@mail.com">
+
+                                <label for="telefone">Telefone:</label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(99) 9 9999-9999">
+
+                                <label for="dependentes">Dependentes:</label>
+                                <input type="number" id="dependentes" name="dependentes" placeholder="Número de Dependentes" required>
+
+                                <label for="agenciaBancaria">Agência Bancária:</label>
+                                <input type="number" id="agenciaBancaria" name="agenciaBancaria" placeholder="Agência Bancária" required>
+
+                                <label for="contaBancaria">Conta Bancária:</label>
+                                <input type="number" id="contaBancaria" name="contaBancaria" placeholder="Conta Bancária" required>
+                                
+                                <label for="dataAdmissao">Data de Admissão:</label>
+                                <input type="date" id="dataAdmissao" name="dataAdmissao" placeholder="Data de Admissão" required>
 
                                 <button class="btn-cadastrar" type="submit" onclick="validar(event)">Cadastrar
                             </form>
