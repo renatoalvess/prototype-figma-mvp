@@ -45,6 +45,16 @@ app.get('/pesquisar-cargo', (req, res) => {
   res.render('pesquisar_cargo'); // Renderiza o arquivo `views/cadastrar_cargo.ejs`
 });
 
+// Rota página Cadastrar Funcionario
+app.get('/cadastrar-funcionario', (req, res) => {
+  res.render('cadastrar_funcionario'); // Renderiza o arquivo `views/cadastrar_funcionario.ejs`
+});
+
+// Rota página Listar Funcionarios
+app.get('/listar-funcionarios', (req, res) => {
+  res.render('listar_funcionarios'); // Renderiza o arquivo `views/listar_funcionarios.ejs`
+});
+
 // Iniciar o servidor
 const PORT = 3000;
 app.listen(PORT, () => {
