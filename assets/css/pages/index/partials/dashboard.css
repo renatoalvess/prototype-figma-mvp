@@ -132,6 +132,8 @@
     transition: transform 0.2s;
     margin-top: 10px;
     height: 300px;
+    overflow-x: auto; /* Adiciona rolagem horizontal ao card */
+
 }
 
 .card-4:hover {
@@ -158,6 +160,7 @@
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
+    overflow-x: auto; /* Adiciona a barra de rolagem horizontal */
 }
 
 .card-4 th,
@@ -165,6 +168,11 @@
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+    font-size: var(--f3);
+    overflow: hidden;
+    /* Oculta o texto que ultrapassa */
+    text-overflow: ellipsis;
+    /* Adiciona '...' ao final do texto que não cabe */
 }
 
 .card-4 th {
@@ -246,7 +254,7 @@
 }
 
 /* Media Queries */
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
     .dashboard-container {
         width: calc(100% - 40px);
     }
@@ -265,12 +273,6 @@
         margin-right: auto;
 
     }
-
-    .cards-4 {
-        width: 100%;
-        display: none;
-    }
-
 
     .cards-5 {
         width: 100%;
@@ -316,5 +318,14 @@
     .card-5 h3,
     .card-5 p {
         margin: 10px;
+    }
+}
+
+/* Media Queries para Telas Menores */
+@media (max-width: 768px) {
+    .card-4 th,
+    .card-4 td {
+        font-size: 12px; /* Reduz o tamanho da fonte */
+        padding: 8px; /* Reduz o preenchimento */
     }
 }

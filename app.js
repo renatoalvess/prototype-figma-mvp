@@ -31,8 +31,8 @@ app.get('/cadastrar-setor', (req, res) => {
   res.render('cadastrar_setor'); // Renderiza o arquivo `views/cadastrar_setor.ejs`
 });
 // Rota página Pesquisar Setor
-app.get('/pesquisar-setor', (req, res) => {
-  res.render('pesquisar_setor'); // Renderiza o arquivo `views/pesquisar_setor.ejs`
+app.get('/listar-setores', (req, res) => {
+  res.render('listar_setores'); // Renderiza o arquivo `views/pesquisar_setor.ejs`
 });
 
 // Rota página Cadastrar Cargo
@@ -40,9 +40,9 @@ app.get('/cadastrar-cargo', (req, res) => {
   res.render('cadastrar_cargo'); // Renderiza o arquivo `views/cadastrar_cargo.ejs`
 });
 
-// Rota página Pesquisar Cargo
-app.get('/pesquisar-cargo', (req, res) => {
-  res.render('pesquisar_cargo'); // Renderiza o arquivo `views/cadastrar_cargo.ejs`
+// Rota página listar Cargos
+app.get('/listar-cargos', (req, res) => {
+  res.render('listar_cargos'); // Renderiza o arquivo `views/listar_cargos.ejs`
 });
 
 // Rota página Cadastrar Funcionario
