@@ -3,7 +3,7 @@
 @import './partials/header.css';
 
 @import '../cadastrar_setor/cadastrar_setor.css';
-@import '../cadastrar_setor/pesquisar_setor.css';
+@import '../listar_setores/listar_setores.css';
 
 @import '../cadastrar_funcionario/cadastrar_funcionario.css';
 
