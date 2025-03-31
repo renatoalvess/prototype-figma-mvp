@@ -1,0 +1,21 @@
+.radio_label {
+    gap: 8px; /* Espaço entre a bolinha e o texto */
+    cursor: pointer; /* Mostra o ponteiro ao passar o mouse sobre o label */
+    font-weight: 100;
+}
+
+.label-container {
+    display: flex;
+    align-items: center; /* Garante alinhamento vertical */
+    gap: 20px; /* Espaço entre os grupos */
+    margin-bottom: 15px;
+
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+    width: 12px; /* Tamanho da bolinha */
+    height: 12px; /* Tamanho da bolinha */
+    display: inline-block;
+}

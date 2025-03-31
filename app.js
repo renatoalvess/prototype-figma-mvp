@@ -55,6 +55,11 @@ app.get('/listar-funcionarios', (req, res) => {
   res.render('listar_funcionarios'); // Renderiza o arquivo `views/listar_funcionarios.ejs`
 });
 
+// Rota página Gerar Pagamento
+app.get('/gerar-pagamento', (req, res) => {
+  res.render('gerar_pagamento'); // Renderiza o arquivo `views/listar_funcionarios.ejs`
+});
+
 // Iniciar o servidor
 const PORT = 3000;
 app.listen(PORT, () => {

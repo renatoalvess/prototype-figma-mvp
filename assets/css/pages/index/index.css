@@ -6,6 +6,7 @@
 @import '../listar_setores/listar_setores.css';
 
 @import '../cadastrar_funcionario/cadastrar_funcionario.css';
+@import '../listar_funcionario/listar_funcionario.css';
 
 @import '../login/barra-lateral.css';
 @import '../login/tela-login.css';
