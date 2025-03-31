@@ -1,0 +1,50 @@
+/* Ícones de ditar/deletar */
+
+.card-4 td.action-icons {
+    text-align: left;
+    min-width: 100px; 
+}
+
+.card-4 td.action-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.card-4 td.action-icons a:last-child {
+    margin-right: 0;
+}
+
+.card-4 td.action-icons svg {
+    display: inline-block;
+    vertical-align: middle;
+}
+.icon {
+    width: 20px; 
+    height: 20px; 
+    fill: #000;
+}
+
+.icon:hover {
+    fill: #007bff;
+}
+
+/* Ícone de pesquisa no input */
+
+.input-container {
+    position: relative;
+    display: flex;
+}
+
+.icon-search {
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none; 
+    color: #000; 
+    width: 20px; 
+    height: 20px; 
+}
+.icon-search svg:hover {
+    fill: #007bff;
+}

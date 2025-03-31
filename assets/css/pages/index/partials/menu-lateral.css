@@ -14,6 +14,7 @@
     color: var(--cor-cinzamenu);
     font-size: var(--f2);
     min-height: 100vh;
+    z-index: 1000;
 }
 
 .menu-lateral h2 {
