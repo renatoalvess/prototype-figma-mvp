@@ -131,7 +131,7 @@
     border-radius: 8px;
     transition: transform 0.2s;
     margin-top: 10px;
-    height: 300px;
+    height: auto;
     overflow-x: auto; /* Adiciona rolagem horizontal ao card */
 
 }

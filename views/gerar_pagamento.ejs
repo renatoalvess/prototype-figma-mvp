@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Recursos Humanos</title>
+    <link rel="stylesheet" href="/css/pages/index/index.css">
+    <script src="/css/js/pages/index/index.js" defer></script>
+    <script src="/js/pages/index/index.js" defer></script>
+    <script src="/js/pages/cadastrar_funcionario/cadastrar_funcionario.js" defer></script>
+    <script src="/js/pages/partials/btn_limpar_form.js" defer></script>
+</head>
+
+<body>
+    <!-- Container Principal -->
+    <div class="container">
+        <!-- Menu lateral-->
+        <%- include('partials/menu_lateral') %>
+
+            <!-- Container dashboard-->
+            <div class="dashboard-container">
+
+                <!-- Header -->
+                <%- include('partials/header') %>
+                    <div class="container-forms">
+
+                        <div class="forms">
+                            <div class="container-titulo">
+                                <div class="titulo-form">
+                                    <h2>
+                                        FOLHA DE PAGAMENTO
+                                    </h2>
+                                </div>
+                                <div class="icon-back">
+                                    <a href="/dashboard">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                            fill="rgba(170,178,190,1)">
+                                            <path
+                                                d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM12 20C16.42 20 20 16.42 20 12C20 7.58 16.42 4 12 4C7.58 4 4 7.58 4 12C4 16.42 7.58 20 12 20ZM12 11H16V13H12V16L8 12L12 8V11Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Tabela / herdando os cards -->
+                            <div class="dashboard">
+                                <div class="cards-4">
+                                    <div class="card-4">
+                                        <h3>Remessa</h3>
+                                        <table>
+                                            <tr>
+                                                <td>Folha de Pagamento: Relatório</td>
+                                                <td>Mês: Abril</td>
+                                                <td>Data do pagamento: 31/03/2025</td>
+                                            </tr>
+                                        </table>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Nome do Funcionario</th>
+                                                    <th>Cod. Banco</th>
+                                                    <th>Agência</th>
+                                                    <th>Conta</th>
+                                                    <th>Valor</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>José da Silva</td>
+                                                    <td>001</td>
+                                                    <td>1020-0</td>
+                                                    <td>11.111-1</td>
+                                                    <td>R$ 2.000,00</td>
+                                                </tr>
+                                                <tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Antonio de Sousa</td>
+                                                    <td>001</td>
+                                                    <td>1020-0</td>
+                                                    <td>22.222-2</td>
+                                                    <td>R$ 2.000,00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Cy Vilanova</td>
+                                                    <td>001</td>
+                                                    <td>1020-0</td>
+                                                    <td>22.222-2</td>
+                                                    <td>R$ 10.000,00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table>
+                                            <tr>
+                                                <th>Total de vínculos: 03</th>
+                                                <th>Valor total: R$14.000,00</th>
+                                            </tr>
+                                        </table>
+                                        <button class="btn-cancelar" type="submit" onclick="validar(event)">Gerar PDF
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fim da tabela -->
+                        </div>
+                    </div>
+            </div>
+</body>
+
+</html>
