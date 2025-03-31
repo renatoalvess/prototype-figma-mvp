@@ -11,10 +11,7 @@ function validar(event) {
     const dependentes = document.getElementById('dependentes').value;
     const agenciaBancaria = document.getElementById('agenciaBancaria').value;
     const contaBancaria = document.getElementById('contaBancaria').value;
-<<<<<<< HEAD
     const situacao = document.querySelector('input[name="situacao"]:checked'); // Verifica o radio button selecionado
-=======
->>>>>>> 62922dd9312582347597cdb43926c337ca505376
     const dataAdmissao = document.getElementById('dataAdmissao').value;
     const email = document.getElementById('email').value;
 
@@ -40,20 +37,18 @@ function validar(event) {
     
     if (endereco === '') {
         alert('Por favor, preencha o campo Endereço.');
-<<<<<<< HEAD
+
         return false;
     }
         
     if (municipio === '') {
         alert('Por favor, preencha o campo Município.');
-=======
->>>>>>> 62922dd9312582347597cdb43926c337ca505376
+
         return false;
     }
     
     if (email === '') {
         alert('Por favor, preencha o campo E-mail.');
-<<<<<<< HEAD
         return false;
     }
     
@@ -79,8 +74,7 @@ function validar(event) {
     
     if (dataAdmissao === '') {
         alert('Por favor, preencha o campo Data de Admissão.');
-=======
->>>>>>> 62922dd9312582347597cdb43926c337ca505376
+
         return false;
     }
     
@@ -115,15 +109,12 @@ function validar(event) {
     }
     
 
-<<<<<<< HEAD
     if (!situacao) { // Verifica se nenhum botão de rádio foi selecionado no grupo "situacao"
         alert('Por favor, informe se o Funcionário está Ativo ou Inativo.');
         return false;
     }
     
 
-=======
->>>>>>> 62922dd9312582347597cdb43926c337ca505376
     // Valida o formato do e-mail
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
