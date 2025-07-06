@@ -2,6 +2,9 @@
 const express = require('express');
 const app = express();
 
+// Iniciar o servidor
+const PORT = 3001;
+
 // Configurar a pasta de arquivos estáticos
 app.use(express.static('assets'));
 
@@ -60,8 +63,17 @@ app.get('/gerar-pagamento', (req, res) => {
   res.render('gerar_pagamento'); // Renderiza o arquivo `views/listar_funcionarios.ejs`
 });
 
-// Iniciar o servidor
-const PORT = 3000;
-app.listen(PORT, () => {
-  console.log(`Servidor rodando em http://localhost:${PORT}`);
-});
+
+// Inicia o servidor se não estiver em modo de teste
+if (process.env.NODE_ENV !== 'test') {
+  app.listen(PORT, () => {
+    console.log(`Servidor rodando na porta http://localhost:${PORT}`);
+  });
+
+}
+
+// app.listen(PORT, () => {
+//   console.log(`Servidor rodando em http://localhost:${PORT}`);
+// });
+
+module.exports = app;
