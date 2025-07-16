@@ -1,28 +1,53 @@
 name: CI Node.js
 # Dispara em qualquer push ou pull request, para qualquer branch
 on:
+  # push:
+  # pull_request:
+
   push:
+    branches: [main] # Roda em commits para a branch 'main'
   pull_request:
+    branches: [main] # Roda em Pull Requests direcionados à 'main'
 
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
     steps:
 
-      # 1. Passo para baixar o código do seu repositório para a máquina virtual
+      # 1. Baixar o código do repositório para a máquina virtual
       - name: Checkout do código
         uses: actions/checkout@v4
 
-      # 2. Passo para configurar o ambiente Node.js na versão desejada
+      # 2. Configura o ambiente Node.js
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      # 3. Passo para instalar as dependências do projeto
+      # 3. Instala as dependências
       - name: Instalar dependências
         run: npm install
 
-      # 4. Passo para executar a tarefa de teste que configuramos
+      # 4. Executa a tarefa de teste
       - name: Rodar testes
         run: npm test
+
+  security-audit:
+    name: Auditoria de Segurança
+    runs-on: ubuntu-latest
+    needs: build-and-test 
+
+    steps:
+      - name: Checkout do Código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar Dependências (para auditoria)
+        run: npm install --ignore-scripts # Instala sem rodar scripts
+
+      - name: Rodar NPM Audit
+        run: npm audit --audit-level=high # Falha se houver vulnerabilidades críticas
