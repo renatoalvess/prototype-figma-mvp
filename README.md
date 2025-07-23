@@ -100,3 +100,6 @@ A integração contínua também facilita a colaboração entre as equipes, acel
 
 Pra quem está aprendendo a programar é importante tentar entender e aplicar desde cedo, pois ajuda a criar boas práticas,
 promove um desenvovlimento mais rápido, seguro, e organizado, evitando grandes problemas futuros.
+
+
+
