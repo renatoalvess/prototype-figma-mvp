@@ -80,6 +80,23 @@ Antes de começar, certifique-se de ter as seguintes ferramentas instaladas:
 5. Abra um Pull Request.
 
 
-##  Processo de Integração Contínua (CI)
+##  Instruções sobre o Processo de Integração Contínua (CI)
 
-Teste 1
+
+
+
+
+
+##  [Componente Extensionista] O que é o Processo de Integração Contínua (CI)?
+
+- Aluno: **Renato Alves**
+
+A integração contínua é responsável por integrar e testar automaticamente alterações no código-fonte de um projeto. 
+O bjetivo é indentificar problemas o mais rápido possível, para que possam ser corrigidos de forma eficaz.
+
+As ferramentas realizam várias operações como compilação de código, testes automatizados, análise de código, etc. 
+Isso permite entregar um software com maior qualidade e em menos tempo, reduzindo trabalho e custos. 
+A integração contínua também facilita a colaboração entre as equipes, acelerando e simplifcando o processo de entrega.
+
+Pra quem está aprendendo a programar é importante tentar entender e aplicar desde cedo, pois ajuda a criar boas práticas,
+promove um desenvovlimento mais rápido, seguro, e organizado, evitando grandes problemas futuros.
