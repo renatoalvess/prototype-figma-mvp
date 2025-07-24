@@ -150,5 +150,16 @@ A integração contínua também facilita a colaboração entre as equipes, acel
 Pra quem está aprendendo a programar é importante tentar entender e aplicar desde cedo, pois ajuda a criar boas práticas,
 promove um desenvovlimento mais rápido, seguro, e organizado, evitando grandes problemas futuros.
 
+- Aluno: **José Valbério**
+
+Para quem está começando a programar, aprender sobre integração contínua desde cedo pode fazer toda a diferença. Essa prática estimula bons hábitos, como manter o código sempre funcionando, colaborar com outros desenvolvedores e organizar melhor o fluxo de trabalho.
+
+A integração contínua permite que alterações no código sejam rapidamente testadas e integradas ao projeto principal de forma automática. Em vez de esperar que vários erros se acumulem e virem um problema maior, o time consegue detectar falhas logo no início e corrigi-las com agilidade.
+
+Com o uso de ferramentas específicas, esse processo se torna ainda mais eficiente. Elas cuidam de tarefas como compilar o código, rodar testes automatizados e verificar se tudo continua funcionando como esperado. Isso reduz retrabalho e aumenta a confiança no sistema que está sendo construído.
+
+O objetivo é claro: facilitar o trabalho em equipe e permitir a entrega de um produto com mais qualidade em menos tempo. A integração contínua se torna, assim, um verdadeiro aliado no desenvolvimento de software moderno.
+
+
 
 
