@@ -82,10 +82,59 @@ Antes de começar, certifique-se de ter as seguintes ferramentas instaladas:
 
 ##  Instruções sobre o Processo de Integração Contínua (CI)
 
+Este projeto utiliza GitHub Actions para automatizar a verificação da qualidade, testes e segurança do código. As Actions são configuradas nos arquivos .yml dentro da pasta .github/workflows/.
 
+Sempre que você faz um push para a branch main ou abre/atualiza um Pull Request direcionado a branch main, as seguintes verificações são executadas automaticamente:
 
+1. CI Basico: Build e Testes Node.js (ci-node.yml)
+Este é o processo central de CI, garantindo a funcionalidade e estabilidade do codigo.
 
+O que faz:
 
+- Baixa o código do repositório.
+
+- Configura o ambiente Node.js (versão 20).
+
+- Instala todas as dependências do projeto (npm install).
+
+- Executa todos os testes automatizados do projeto (npm test).
+
+Garante que qualquer nova alteração não introduza erros e que o projeto continue funcional.
+
+2. Auditoria de Segurança de Dependências (ci-node.yml)
+Uma camada de segurança crucial para as bibliotecas que seu projeto utiliza.
+
+O que faz:
+
+- Só é executado se o "Build e Testes" passar com sucesso.
+
+- Instala as dependências (de forma segura, sem rodar scripts).
+
+- Executa uma auditoria de segurança (npm audit --audit-level=high) para detectar vulnerabilidades conhecidas nas dependencias do projeto.
+
+Previne que o projeto incorpore bibliotecas com falhas de segurança conhecidas, protegendo o sistema contra possíveis ataques.
+
+3. Verificação de Credenciais Expostas (scan-secrets.yml)
+Uma verificação de segurança vital para proteger informações sensíveis.
+
+O que faz:
+
+- Baixa o código do repositório, incluindo todo o histórico de commits.
+
+- Usa a ferramenta Gitleaks para escanear o código e o histórico em busca de senhas, chaves de API ou outros segredos que possam ter sido acidentalmente commitados.
+
+Protege o projeto contra vazamentos acidentais de informações sensíveis.
+
+4. Como Acompanhar o Status das Verificações
+Você pode monitorar o progresso e os resultados de todas essas verificações de algumas formas:
+
+Na aba Actions do repositório:
+
+- Vá para a página principal do seu repositório no GitHub.
+
+- Clique na aba Actions.
+
+- Você verá uma lista de todas as execuções de workflow. Clique em uma execução específica para ver os detalhes dos jobs (Build e Testes, Auditoria de Segurança, Verificar Credenciais) e seus logs.
 
 ##  [Componente Extensionista] O que é o Processo de Integração Contínua (CI)?
 
