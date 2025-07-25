@@ -160,6 +160,19 @@ Com o uso de ferramentas específicas, esse processo se torna ainda mais eficien
 
 O objetivo é claro: facilitar o trabalho em equipe e permitir a entrega de um produto com mais qualidade em menos tempo. A integração contínua se torna, assim, um verdadeiro aliado no desenvolvimento de software moderno.
 
+- Aluno: **Antonio Harisson**
 
+a integração continua é uma pratica de desenvolvimento e da cultura devOps, onde há a integração 
+codigo e suas modificações em um repositorio, geralmente o Git. não só isso, a IC trabalha para 
+garantir a qualidade do software, rezudindo erros e tornando mais eficiente o trabalho de desenvolvimento. 
 
+a partir de scripts e automações, é possivel automatizar diversas ações, como: detectar e resolver problemas 
+com rapidez, a partir de uma automação que testa constantemente o codigo fonte do projeto;
+reduzir o tempo de validação do codigo;
+identificar redundancias e codigos sem utilidade, garantindo um projeto limpo e eficiente;
+identificar e notificar por email, mensagem e ate whatsapp, quando uma modificação ocorrer ou uma ação 
+for realizada, como push, pull, merge... 
 
+com a IA, a integração continua se tornou mais requintada e funcional, com automações capazes  
+de ler o codigo, identificar problemas (bugs, redundancias...) e propor uma solução, tudo em questão de segundos. 
+w
